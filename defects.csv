@@ -1,0 +1,14 @@
+ID,Area,defects,DEFECTS, status,,,Severity,,STATUS
+D-001,Transactions,,Debit-No-Credit Loop — reversal does not auto-trigger,,,,Critical,,FAIL
+D-002,Transactions,,Duplicate Debit on Retry — history retry creates second charge,,,,Critical,,FAIL
+D-003,Transactions,,Silent Debit on Timeout — debit processes despite UI timeout,,,,Critical,,FAIL
+D-004,Transactions,,Idempotency Breach — same key produces two ledger entries,,,,Critical,,FAIL
+D-005,Channels,,Cross-Channel Balance Lag — POS debit not reflected for 5+ mins,,,,High,,FAIL
+D-006,Channels,,USSD Transactions Missing in App — absent from mobile ledger,,,,High,,FAIL
+D-007,Network,,App Crash on Offline Launch — crashes without network at start,,,,Critical,,FAIL
+D-008,Network,,No Offline Transaction Queue — transfers silently discarded,,,,Critical,,FAIL
+D-009,Network,,No SMS OTP Fallback — push failure locks out user entirely,,,,Critical,,FAIL
+D-010,Support,,No Contextual Dispute CTA — must navigate to Help menu,,,,High,,FAIL
+D-011,Support,,No Automated Refund Engine — failed+debited needs manual request,,,,Critical,,FAIL
+D-012,Support,,Dispute SLA Breach (48h+) — zero acknowledgement after 48 hours,,,,Critical,,FAIL
+D-013,Support,,No Dispute Status Tracking — no in-app tracking feature exists,,,,High,,FAIL
